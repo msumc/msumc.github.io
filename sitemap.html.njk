@@ -1,0 +1,17 @@
+---
+permalink: /sitemap.html
+sitemapIgnore: true
+eleventyExcludeFromCollections: true
+layout: layout.html
+---
+<h1>Sitemap</h1>
+<ul>
+{% for page in collections.all | reverse %}
+  <li>
+    <p>
+      <a href="{{page.url|url}}">{{site.url}}{{page.url|url}}</a>
+      (last modified on {{page.date | rssDate}})
+    </p>
+  </li>
+{% endfor %}
+</ul>
