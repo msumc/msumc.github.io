@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/static/img/logo.png" alt="MSUMC Logo">
+    </a>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button 
+       class="navbar-toggler" 
+       type="button" 
+       data-bs-toggle="collapse" 
+       data-bs-target="#links" 
+       >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="links">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a data-subject="index" class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a data-subject="contact_us" class="nav-link" href="/pages/contact_us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a data-subject="calendar" class="nav-link" href="/pages/calendar">Calendar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown">
+            About Us
+          </a>
+          <div class="dropdown-menu">
+            <a data-subject="our_staff" class="dropdown-item" href="/pages/our_staff">Our Staff</a>
+            <a data-subject="our_ministries" class="dropdown-item" href="/pages/our_ministries">Our Ministries</a>
+            <a data-subject="our_history" class="dropdown-item" href="/pages/our_history">Our History</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="groupsDropdown" role="button" data-bs-toggle="dropdown">
+            Groups
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/pages/groups/united-methodist-men">United Methodist Men</a>
+            <a class="dropdown-item" href="/pages/groups/united-methodist-women">United Methodist Women</a>
+            <a class="dropdown-item" href="/pages/groups/main-street-youth">Main Street Youth</a>
+            <a class="dropdown-item" href="/pages/groups/healing-hands-ministry">Healing Hands Ministry</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a data-subject="links" class="nav-link" href="/pages/links">Links</a>
+        </li>
+        <li class="nav-item">
+          <a data-subject="newsletters" class="nav-link" href="/pages/newsletters">Newsletters</a>
+        </li>
+        <li class="nav-item">
+          <a data-subject="sermons" class="nav-link" href="/pages/sermons">Sermons</a>
+        </li>
+        <li class="nav-item dropdown d-lg-none d-block">
+          <a class="nav-link dropdown-toggle" href="#" id="scheduleDropdown" role="button" data-bs-toggle="dropdown">
+            Sunday Service Schedule
+          </a>
+          <div class="dropdown-menu">
+            <span class="dropdown-item">
+
+              {% include sidebar.html %}
+
+            </span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
