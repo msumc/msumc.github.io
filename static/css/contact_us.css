@@ -1,0 +1,9 @@
+.church-contact-information th {
+  background: #777; 
+  text-align: center;
+  border: none !important;
+  color: white;
+}
+.church-contact-information td {
+  padding-left: 20px;
+}

@@ -13,40 +13,30 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <meta name="author" content="{{site.author}}">
-
   <meta name="description" content="Main Street UMC Abbeville's (MSUMC) Website">
-
   <meta name="keywords" content="msumc, MSUMC, Main Street, UMC, Abbeville, SC, Church">
-
   <link rel="shortcut icon" href="/static/img/favicon.png">
 
   <!-- CSS only -->
   <link rel="stylesheet" href="/static/css/vendor/bootstrap.min.css">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
-
-
-  <!-- HighlightJS -->
-  <link rel="stylesheet" href="/static/css/vendor/highlightjs/github.css">
-
   <link rel="stylesheet" href="/static/css/styles.css">
+
   <title>{{ site.title }}</title>
 </head>
 <body>
   {% include navbar.html %}
 
-
   <main class="container">
     <div class="row">
-    <div class="col-lg-10">
-      {{ content | safe }}
-    </div>
-    <div class="col-lg-2 d-lg-block d-none">
-      {% include sidebar.html %}
-    </div>
+      <div class="col-lg-8 col-xl-9">
+        {{ content | safe }}
+      </div>
+      <aside class="col-lg-4 col-xl-3 d-lg-block d-none">
+        {% include sidebar.html %}
+      </aside>
     </div>
   </main>
 
@@ -56,10 +46,6 @@
   <script src="/static/js/vendor/bootstrap.min.js"></script>
   <script src="/static/js/vendor/popper.min.js"></script>
 
-  <!-- HighlightJS -->
-  <script src="/static/js/vendor/highlightjs/highlight.pack.js"></script>
-
   <script src="/static/js/script.js"></script>
-
 </body>
 </html>
