@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>/pages/contact_us/</loc>
+            <lastmod>2021-03-01T00:06:36Z</lastmod>
+        </url>
+    
+        <url>
             <loc>/404.html</loc>
             <lastmod>2021-02-28T23:54:52Z</lastmod>
         </url>
@@ -39,11 +44,6 @@
         <url>
             <loc>/pages/sermons/</loc>
             <lastmod>2021-02-28T02:36:08Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>/pages/contact_us/</loc>
-            <lastmod>2021-02-28T02:33:20Z</lastmod>
         </url>
     
         <url>
